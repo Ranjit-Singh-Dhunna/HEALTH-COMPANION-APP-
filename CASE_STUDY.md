@@ -41,7 +41,7 @@
 | **Research** | 10 interviews + 50 surveys = 60 participants |
 | **Deliverable** | Figma clickable prototype (~25–30 screens) |
 
-The **Health Companion App** is a mobile application designed to help individuals with chronic health conditions manage their medications and appointments — without the cognitive overload, notification fatigue, or accessibility barriers that plague existing solutions.
+The **Health Companion App** is a mobile application designed to help individuals with chronic health conditions manage their medications and appointments without the cognitive overload, notification fatigue, or accessibility barriers that plague existing solutions.
 
 ---
 
@@ -59,7 +59,7 @@ The consequences are real:
 > **76% of people with chronic conditions miss medications at least sometimes.**  
 > The #1 reason? They forgot.
 
-And appointment management is, in the words of one participant, *"a logistical nightmare"* — especially when coordinating between 3–5 different specialists who don't communicate with each other.
+And appointment management is, in the words of one participant, *"a logistical nightmare"*  especially when coordinating between 3–5 different specialists who don't communicate with each other.
 
 ### The Gap
 
@@ -112,7 +112,7 @@ Participant breakdown:
 
 ### What the Interviews Revealed
 
-I conducted a 19-question semi-structured interview covering medication habits, appointment management, technology usage, and health concerns. The conversations were revealing — not just for *what* people said, but for the emotion behind it:
+I conducted a 19-question semi-structured interview covering medication habits, appointment management, technology usage, and health concerns. The conversations were revealing not just for *what* people said, but for the emotion behind it:
 
 > *"I'll stand there staring at the organizer wondering, 'Did I take these already?' It's scary because with my blood pressure medication, you can't double up."*  
 > — Margaret Chen, 68
@@ -305,7 +305,7 @@ Skeptical → Anxious → Accomplished → Confident → Grateful → Advocate
    😟         😰          🙂            😊           ❤️          🌟
 ```
 
-**The killer moment:** Stage 6. Margaret opens the app at 10:00 AM wondering if she took her pills. She gets an instant answer: *"Morning medications — All taken ✓ 7:05 AM."* Her anxiety dissolves in seconds. This single feature — immediate, timestamped confirmation — became the central value proposition for the Simplicity Seeker segment.
+**The killer moment:** Stage 6. Margaret opens the app at 10:00 AM wondering if she took her pills. She gets an instant answer: *"Morning medications — All taken ✓ 7:05 AM."* Her anxiety dissolves in seconds. This single feature: immediate, timestamped confirmation, became the central value proposition for the Simplicity Seeker segment.
 
 ---
 
@@ -329,7 +329,7 @@ Frustrated → Impressed → Satisfied → Surprised → Delighted → Grateful 
     😤          😲          🙂          😲          🌟          ❤️          🎯
 ```
 
-**The killer moment:** Stage 5. Sarah needs to schedule three separate medical appointments while her work calendar is packed. The app analyzes her calendar, finds the optimal day, and clusters all three appointments — saving her two hours of travel. This appointment clustering feature became the defining value for the Busy Balancer segment.
+**The killer moment:** Stage 5. Sarah needs to schedule three separate medical appointments while her work calendar is packed. The app analyzes her calendar, finds the optimal day, and clusters all three appointments saving her two hours of travel. This appointment clustering feature became the defining value for the Busy Balancer segment.
 
 ---
 
@@ -476,7 +476,7 @@ Three mode cards are presented at launch with clear plain-language descriptions.
 
 ![Home Dashboard](wireframes/2frame.png)
 
-The home screen opens with a personalized greeting and puts "Today's Medications" at the very top — because that's the question users are asking the moment they open the app. Color-coded status indicators and timestamps eliminate all ambiguity.
+The home screen opens with a personalized greeting and puts "Today's Medications" at the very top because that's the question users are asking the moment they open the app. Color-coded status indicators and timestamps eliminate all ambiguity.
 
 *Research basis: Solving the #1 "Did I take it?" question in under 5 seconds.*
 
@@ -486,7 +486,7 @@ The home screen opens with a personalized greeting and puts "Today's Medications
 
 ![Home Dashboard Alternate](wireframes/3frame.png)
 
-The Quick Actions 2×2 grid offers fast navigation to My Health, Appointments, Settings, and Help — accessible without hunting through menus.
+The Quick Actions 2×2 grid offers fast navigation to My Health, Appointments, Settings, and Help accessible without hunting through menus.
 
 ---
 
@@ -504,7 +504,7 @@ Each medication card shows a photo for visual identification, special instructio
 
 ![Add Medication](wireframes/5frame.png)
 
-A dual-input system defaults to camera scanning. The OCR reader auto-detects medication name, dosage, and form from the pill bottle — eliminating the high-error-rate manual text entry that causes incorrect medication records.
+A dual-input system defaults to camera scanning. The OCR reader auto-detects medication name, dosage, and form from the pill bottle eliminating the high-error-rate manual text entry that causes incorrect medication records.
 
 ---
 
@@ -540,7 +540,7 @@ Appointment cards include auto-generated preparation checklists (bring insurance
 
 The scheduling assistant analyzes the user's work calendar to suggest optimal appointment days. When multiple appointments are needed, it proposes clustering them to save travel time and displays concrete savings: *"💰 Save 2 hrs travel" / "💰 Save $15 parking."*
 
-*Research basis: Sarah's #1 pain point — coordination across 4+ specialists.*
+*Research basis: Sarah's #1 pain point coordination across 4+ specialists.*
 
 ---
 
@@ -548,7 +548,7 @@ The scheduling assistant analyzes the user's work calendar to suggest optimal ap
 
 ![Settings & Accessibility](wireframes/10frame.png)
 
-Mode switching, text size with live preview, high contrast and voice command toggles, and caregiver connection management — all surfaced clearly without hiding critical features in nested menus.
+Mode switching, text size with live preview, high contrast and voice command toggles, and caregiver connection management all surfaced clearly without hiding critical features in nested menus.
 
 ---
 
@@ -649,7 +649,7 @@ Each major design element traces directly back to a specific research finding:
 **Research trigger:** 9/10 interview participants cited appointment coordination as a major pain point; 40% have 7+ appointments/year  
 **Problem:** Scheduling 3–4 specialists requires hours of juggling calendars  
 **Solution:** App analyzes work calendar and proposes clustering multiple appointments on the same day  
-**Impact:** Sarah's #1 time sink — calendar coordination — is solved automatically
+**Impact:** Sarah's #1 time sink calendar coordination is solved automatically
 
 ### Decision 5: "Bad Day Mode"
 **Research trigger:** Emily (45): "On my worst days, I can barely get out of bed"  
@@ -660,7 +660,7 @@ Each major design element traces directly back to a specific research finding:
 ### Decision 6: Accessibility-First, Not Accessibility-Added
 **Research trigger:** 56% have some accessibility need  
 **Problem:** Accessibility features feel segregated in most apps ("go to accessibility settings")  
-**Solution:** Large touch targets, high contrast, and voice reminders are present across all modes — invisible infrastructure that elevates the experience for everyone  
+**Solution:** Large touch targets, high contrast, and voice reminders are present across all modes invisible infrastructure that elevates the experience for everyone  
 **Impact:** Features designed for Margaret benefit all users under stress, distraction, or low-light conditions
 
 ---
@@ -669,14 +669,14 @@ Each major design element traces directly back to a specific research finding:
 
 ### How the Process Worked
 
-The most important insight from this project is that every good design decision was *pulled* out of user research — not invented. Before the interviews, the obvious assumption was that users simply "forget" medication and need a reminder. The research revealed something more nuanced:
+The most important insight from this project is that every good design decision was *pulled* out of user research not invented. Before the interviews, the obvious assumption was that users simply "forget" medication and need a reminder. The research revealed something more nuanced:
 
 - There's a **confirmation problem** (Did I take it?)
 - There's an **identification problem** (Which pill is this?)
 - There's a **timing problem** (With food? Before breakfast?)
 - There's a **complexity problem** (The schedule itself is overwhelming)
 
-If I had designed based on the assumption, I would have built a better alarm clock. Instead, I designed a **confirmation system** — and that's a completely different product.
+If I had designed based on the assumption, I would have built a better alarm clock. Instead, I designed a **confirmation system** and that's a completely different product.
 
 ---
 
@@ -686,7 +686,7 @@ If I had designed based on the assumption, I would have built a better alarm clo
 
 The two personas have almost opposite needs. Margaret needs extreme simplicity. Sarah needs powerful efficiency features. There's no single interface that satisfies both.
 
-*Solution:* The adaptive three-mode system. Both Margaret and Sarah get a version of the app that feels made for them — because it is.
+*Solution:* The adaptive three-mode system. Both Margaret and Sarah get a version of the app that feels made for them because it is.
 
 ---
 
@@ -694,7 +694,7 @@ The two personas have almost opposite needs. Margaret needs extreme simplicity. 
 
 The app's core value *is* reminders. But too many reminders is exactly why users abandon apps. This is a genuine design paradox.
 
-*Solution:* Smart escalation — only one gentle reminder initially, escalating to persistent only if ignored. Calendar awareness — no interruptions during detected meetings. User control — full preference configuration during onboarding.
+*Solution:* Smart escalation only one gentle reminder initially, escalating to persistent only if ignored. Calendar awareness no interruptions during detected meetings. User control full preference configuration during onboarding.
 
 ---
 
@@ -702,13 +702,13 @@ The app's core value *is* reminders. But too many reminders is exactly why users
 
 24 prioritized features and 10+ pain points could easily become a bloated prototype with no coherent experience.
 
-*Solution:* A P0–P3 prioritization matrix. P0 features (must-have for core value) got dedicated screens. P2–P3 features were documented but deferred. The prototype does fewer things — but does them excellently.
+*Solution:* A P0–P3 prioritization matrix. P0 features (must-have for core value) got dedicated screens. P2–P3 features were documented but deferred. The prototype does fewer things but does them excellently.
 
 ---
 
 ### 5 Takeaways
 
-1. **Research prevents assumption-driven design.** The "Did I take it?" confirmation feature is the heart of this app — and it never would have existed without user interviews.
+1. **Research prevents assumption-driven design.** The "Did I take it?" confirmation feature is the heart of this app and it never would have existed without user interviews.
 
 2. **Personas are decision tools, not deliverables.** Every time there was a design conflict, asking "Does this work for Margaret?" and "Does this work for Sarah?" resolved it.
 
