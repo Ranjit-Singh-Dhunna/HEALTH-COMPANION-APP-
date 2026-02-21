@@ -2,14 +2,14 @@
 ## A UX Case Study on Designing for Chronic Health Management
 
 **Author:** Ranjit Singh Dhunna  
-**Course:** SOEN 357 — User Interface Design, Concordia University  
+**Course:** SOEN 357 User Interface Design, Concordia University  
 **Date:** February 2026  
 **Tools Used:** Figma, Paper prototyping, Survey forms, Semi-structured interviews
 
 ---
 
 > *"I don't want something complicated. I just want to know: Did I take my pills? When is my next appointment? That's it."*
-> — Margaret, 68, research participant
+> - Margaret, 68, research participant
 
 ---
 
