@@ -1,9 +1,4 @@
 # 🏥 Health Companion App
-
-**SOEN 357 — User Interface Design | Concordia University**  
-**Author:** Ranjit Singh Dhunna  
-**Date:** February 2026
-
 ---
 
 ## About
@@ -17,17 +12,6 @@ The **Health Companion App** is a mobile health management application designed 
 - 👨‍👩‍👧 Caregiver sharing with granular permissions
 - 🌙 "Bad Day Mode" for flare-ups and tough days
 - ♿ Three adaptive interface modes: Simple / Standard / Advanced
-
----
-
-## Research Basis
-
-| | |
-|---|---|
-| **Interviews** | 10 participants (30–45 min each) |
-| **Surveys** | 50 participants |
-| **Total** | 60 participants |
-| **Key finding** | 76% of users with chronic conditions miss medications at least sometimes |
 
 ---
 
