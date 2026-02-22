@@ -643,25 +643,5 @@ The app's core value *is* reminders. But too many reminders is exactly why users
 
 ---
 
-## Project Files
-
-| File | Description |
-|---|---|
-| `README.md` | Project overview and navigation |
-| `user_research/INTERVIEWS.md` | 10 in-depth interview transcripts |
-| `user_research/SURVEYS.md` | 50 survey responses + quantitative data |
-| `RESEARCH_FINDINGS.md` | 8 key findings + feature prioritization |
-| `user_personas.md` | Margaret Chen & Sarah Patel persona profiles |
-| `user_journey_maps.md` | 7-stage journey maps for both personas |
-| `storyboards_flowcharts.md` | 2 storyboards + 2 user flow charts |
-| `wireframes.md` | 10 wireframes with design rationale |
-| `wireframes/` | Wireframe image files (1frame–10frame) |
-| `figma_prototype_guide.md` | Figma prototype build guide |
-| `usability_testing_plan.md` | Complete usability testing plan |
-| `FINAL_REPORT.md` | Full academic report |
-| `CASE_STUDY.md` | This document |
-
----
-
 *Health Companion App — SOEN 357 Final Mini Project, Concordia University*  
 *Ranjit Singh Dhunna — February 2026*
