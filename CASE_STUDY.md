@@ -195,7 +195,7 @@ Two data-driven personas were developed from the research, representing the two 
 
 ### Persona 1: Margaret Chen — The Simplicity Seeker
 
-![Margaret Chen Persona](persona_margaret_chen.png)
+![Margaret Chen Persona](Persona/persona_margaret_chen.png)
 
 | | |
 |---|---|
@@ -232,7 +232,7 @@ Two data-driven personas were developed from the research, representing the two 
 
 ### Persona 2: Sarah Patel — The Busy Balancer
 
-![Sarah Patel Persona](persona_sarah_patel.png)
+![Sarah Patel Persona](Persona/persona_sarah_patel.png)
 
 | | |
 |---|---|
@@ -304,8 +304,10 @@ Margaret's journey begins with **skepticism** and ends with her becoming an **ad
 Skeptical → Anxious → Accomplished → Confident → Grateful → Advocate
    😟         😰          🙂            😊           ❤️          🌟
 ```
+<img width="2752" height="1536" alt="Gemini_Generated_Image_qqzsb5qqzsb5qqzs" src="https://github.com/user-attachments/assets/41408713-3331-4171-bbe4-8bfc260fadd7" />
 
-**The killer moment:** Stage 6. Margaret opens the app at 10:00 AM wondering if she took her pills. She gets an instant answer: *"Morning medications — All taken ✓ 7:05 AM."* Her anxiety dissolves in seconds. This single feature: immediate, timestamped confirmation, became the central value proposition for the Simplicity Seeker segment.
+
+**The killer moment:** Stage 6. Margaret opens the app at 10:00 AM wondering if she took her pills. She gets an instant answer: *"Morning medications, All taken ✓ 7:05 AM."* Her anxiety dissolves in seconds. This single feature: immediate, timestamped confirmation, became the central value proposition for the Simplicity Seeker segment.
 
 ---
 
@@ -328,6 +330,8 @@ Sarah's journey is driven by **efficiency** and discovering that the app can act
 Frustrated → Impressed → Satisfied → Surprised → Delighted → Grateful → Advocate
     😤          😲          🙂          😲          🌟          ❤️          🎯
 ```
+<img width="2752" height="1536" alt="Gemini_Generated_Image_69zect69zect69ze" src="https://github.com/user-attachments/assets/5376ee9d-9601-46fc-b3d7-7e66cc0bdb8e" />
+
 
 **The killer moment:** Stage 5. Sarah needs to schedule three separate medical appointments while her work calendar is packed. The app analyzes her calendar, finds the optimal day, and clusters all three appointments saving her two hours of travel. This appointment clustering feature became the defining value for the Busy Balancer segment.
 
@@ -336,15 +340,8 @@ Frustrated → Impressed → Satisfied → Surprised → Delighted → Grateful 
 ## Storyboards
 
 ### Storyboard 1: Margaret's Morning Medication Routine
+![PHOTO-2026-02-21-19-07-45](https://github.com/user-attachments/assets/cc7d2541-a001-4c7a-8c94-87ed751e94ed)
 
-**Panel 1 — The Reminder**
-Margaret is making breakfast at 7:00 AM. Her phone activates a voice reminder: *"Time for your medication, Margaret."* It reads the medication name aloud.
-
-**Panel 2 — Checking the App**
-She opens the app. She sees a large photo of her medication alongside "Metformin 500mg." She can verify it visually against the pill bottle. *"Is this the right pill?"*
-
-**Panel 3 — Confirmation & Peace**
-She taps the large green **"I TOOK IT"** button. A green checkmark appears: *"✓ Logged 7:05 AM."* She feels reassured for the rest of the day.
 
 **Features demonstrated:** Voice reminder → visual pill photo → oversized action button → timestamp confirmation
 
@@ -352,80 +349,17 @@ She taps the large green **"I TOOK IT"** button. A green checkmark appears: *"�
 
 ### Storyboard 2: Sarah's Appointment Scheduling
 
-**Panel 1 — The Frustration**
-Sarah has three appointments to schedule: infusion, neurologist, and lab work. Her work calendar is completely packed. *"When do I even fit all of this in??"*
+<img width="1536" height="2752" alt="Gemini_Generated_Image_u8akoxu8akoxu8ak" src="https://github.com/user-attachments/assets/ed573f75-6e7e-40cb-a0b1-94860390bcc9" />
 
-**Panel 2 — The App Suggests**
-The app syncs with her Google Calendar and analyzes her schedule. It surfaces: *"💡 Best day: Friday, Feb 28. Cluster 3 appointments?"* Sarah: *"Wait, it analyzed my calendar!"*
-
-**Panel 3 — Success & Relief**
-All three appointments are confirmed on the same day. *"✓ 3 appointments scheduled. Saved 2 hours travel time."* Automatic reminders and preparation checklists are created.
 
 **Features demonstrated:** Calendar integration → intelligent clustering → time savings visualization → auto-generated preparation checklists
 
----
 
-## User Flow Charts
+### More
+<img width="1536" height="2752" alt="Gemini_Generated_Image_tbjrartbjrartbjr" src="https://github.com/user-attachments/assets/a0556173-241b-4e4f-ae8b-4dafce309a57" />
 
-### Flow 1: "Did I take my morning meds?" (Margaret, under 5 seconds)
-
-```
-10:00 AM — Margaret wonders: "Did I take my pills this morning?"
-    │
-    ▼
-Opens Health Companion App
-    │
-    ▼
-Home Dashboard loads automatically
-    │ "Today's Medications" card prominently at top
-    │
-    ▼
-Scans status card:
-    ✅ Metformin 500mg — "Taken 7:05 AM"
-    ✅ Lisinopril 10mg — "Taken 7:05 AM"
-    ✅ Amlodipine 5mg  — "Taken 7:06 AM"
-    ⏰ Metformin 500mg (evening) — "Upcoming 6:00 PM"
-    │
-    ▼
-Margaret: anxiety resolved. 
-"All morning medications taken ✓"
-```
-
-**Design principles at work:** Instant status on home screen, color-coded indicators (green/yellow/red), timestamps for certainty.
-
----
-
-### Flow 2: First-Time Onboarding (Sarah, under 10 minutes)
-
-```
-Sarah downloads app during subway commute
-    │
-    ▼
-Welcome Screen → "Get Started"
-    │
-    ▼
-Mode Selection
-    • Simple / Standard ⭐ / Advanced
-    │→ Sarah selects Standard Mode
-    │
-    ▼
-Quick Sign-In → "Continue with Google" (one tap)
-    │
-    ▼
-Step 1 of 3: Profile — name pre-filled, conditions selected
-    │
-    ▼
-Step 2 of 3: Medications — OCR pill bottle scan (×5 bottles)
-    │→ Auto-detects: "Tecfidera 240mg — Capsule"
-    │
-    ▼
-Step 3 of 3: Smart notifications + Google Calendar connected
-    │
-    ▼
-"✓ You're all set, Sarah!" — Home Dashboard
-```
-
-**Design principles at work:** Social sign-in, OCR for frictionless data entry, 3-step progressive onboarding, skip-friendly at every step.
+<img width="1536" height="2752" alt="Gemini_Generated_Image_scfw5oscfw5oscfw" src="https://github.com/user-attachments/assets/0df04642-c308-44fb-b83e-a5479cc5b8f2" />
+<img width="1536" height="2752" alt="Gemini_Generated_Image_q1j4ouq1j4ouq1j4" src="https://github.com/user-attachments/assets/a25fb197-d31f-428a-a8c9-261cd852ebb0" />
 
 ---
 
@@ -434,18 +368,6 @@ Step 3 of 3: Smart notifications + Google Calendar connected
 The design system was built before any screens, ensuring consistency across all three modes.
 
 ### Design System
-
-**Color Palette**
-
-| Color | Hex | Usage |
-|---|---|---|
-| Primary Blue | `#4A90E2` | Actions, links, primary buttons |
-| Success Green | `#4CAF50` | Taken status, confirmations |
-| Warning Yellow | `#FFC107` | Upcoming medications, attention |
-| Error Red | `#F44336` | Missed doses, critical alerts |
-| Text Primary | `#212121` | Body text |
-| Background | `#FFFFFF` | Screen background |
-| Surface | `#F5F5F5` | Cards, elevated surfaces |
 
 **Typography by Mode**
 
@@ -554,7 +476,8 @@ Mode switching, text size with live preview, high contrast and voice command tog
 
 ## Prototype
 
-The clickable prototype was built in **Figma** targeting the **iPhone 14 Pro** (393×852pt).
+The clickable prototype was built in **Figma** targeting the **iPhone 17 Pro**.
+https://www.figma.com/design/NAPWQgbW47pHnod1PSxhqm/Untitled?node-id=0-1&t=RqtKJFwCyFmmnI4S-1
 
 | | |
 |---|---|
