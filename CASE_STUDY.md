@@ -1,285 +1,223 @@
-# Health Companion App
-## A UX Case Study on Designing for Chronic Health Management
+<div align="center">
 
-**Author:** Ranjit Singh Dhunna  
-**Course:** SOEN 357 User Interface Design, Concordia University  
-**Date:** February 2026  
-**Tools Used:** Figma, Paper prototyping, Survey forms, Semi-structured interviews
+#  Health Companion App
+### *A UX Case Study on Designing for Chronic Health Management*
 
----
+<br>
 
 > *"I don't want something complicated. I just want to know: Did I take my pills? When is my next appointment? That's it."*
-> - Margaret, 68, research participant
+> 
+> — **Margaret, 68** *(Research Participant)*
+
+</div>
 
 ---
 
-## Table of Contents
+##  Overview
 
-1. [Overview](#overview)
-2. [The Problem](#the-problem)
-3. [The Solution](#the-solution)
-4. [Research](#research)
-5. [Personas](#personas)
-6. [User Journey Maps](#user-journey-maps)
-7. [Storyboards](#storyboards)
-8. [User Flow Charts](#user-flow-charts)
-9. [Wireframes](#wireframes)
-10. [Prototype](#prototype)
-11. [Usability Testing Plan](#usability-testing-plan)
-12. [Key Design Decisions](#key-design-decisions)
-13. [Reflections & Takeaways](#reflections--takeaways)
+> **The Health Companion App** is a mobile application designed to help individuals with chronic health conditions manage their medications and appointments without the cognitive overload, notification fatigue, or accessibility barriers that plague existing solutions.
+---
+
+##  The Problem
+
+Millions of people living with chronic conditions manage complicated daily health routines while balancing their lives. The tools available to them are fundamentally broken:
+
+|  The Broken Tool |  The Reality of the Friction |
+| :--- | :--- |
+|  **Pill Organizers** | Cannot confirm *if* a dose was actually taken, leading to double-dosing fears. |
+|  **Phone Alarms** | Quickly degrade into ignorable background noise after a single week. |
+|  **Existing Apps** | Induce severe notification fatigue, leading to rapid app abandonment. |
+|  **Paper Calendars** | Completely fail to prevent double-booking across siloed specialists. |
+
+> ###  The Reality Check
+> **76% of people with chronic conditions miss medications.**
+> *The #1 reason? They simply forgot.*
+
+Furthermore, appointment management is often a **"logistical nightmare,"** requiring coordination between 3–5 different specialists who operate in complete silos.
+
+###  The Market Gap
+Current solutions force a binary choice: **Too Simple** (glorified alarms) or **Too Complex** (overwhelming, bloated dashboards). Neither solves the actual daily friction, as illustrated in our initial user journey storyboards:
+
+<br>
+
+| 👵🏻 The Simplicity Seeker | 👩🏽‍💻 The Busy Balancer |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/ce82c3f0-c9ae-4d6c-a69a-83f3f49b3ac7" width="100%" style="border-radius: 8px;" alt="Margaret Storyboard" /> | <img src="https://github.com/user-attachments/assets/501a0029-f6cf-4715-b180-329e10dd0543" width="100%" style="border-radius: 8px;" alt="Sarah Storyboard" /> |
+| *Margaret's friction is centered on confirmation and physical accessibility.* | *Sarah's friction is centered on logistical coordination and notification fatigue.* |
+
+---
+---
+
+## The Solution: Adaptive Design
+
+Rather than forcing a single interface on an imaginary "average user," the Health Companion App introduces **Adaptive UI Modes**.
+
+| Mode | Target User | Key UX Decisions |
+| :--- | :--- | :--- |
+| 🟢 **Simple** | Tech beginners, seniors | 60pt+ touch targets, 24pt typography, voice cues, single-task screens |
+| 🔵 **Standard** | Everyday users | Calendar sync, smart batch notifications, quick-tap logging |
+| ⚫ **Advanced** | Power users | Deep data visualization, CSV health exports, symptom trend analysis |
+
+#### ✨ Core Global Features
+* ✅ **Time-stamped confirmation:** Solves the "did I take it?" anxiety.
+* 📅 **Smart clustering:** Intelligent appointment scheduling.
+* 📷 **OCR Scanning:** Frictionless onboarding via pill bottle camera scanning.
+* 🤝 **Caregiver Portal:** Granular permission sharing for family members.
+* 🌙 **"Bad Day Mode":** Ultra-low cognitive load UI for flare-ups and fatigue.
 
 ---
 
-## Overview
-
-| | |
-|---|---|
-| **Type** | Mobile Health Application (iOS) |
-| **Timeline** | January–February 2026 |
-| **My Role** | UX Researcher & Designer (solo project) |
-| **Research** | 10 interviews + 50 surveys = 60 participants |
-| **Deliverable** | Figma clickable prototype (~25–30 screens) |
-
-The **Health Companion App** is a mobile application designed to help individuals with chronic health conditions manage their medications and appointments without the cognitive overload, notification fatigue, or accessibility barriers that plague existing solutions.
-
----
-
-## The Problem
-
-Millions of people living with chronic conditions manage complicated daily health routines while also maintaining careers, families, and lives. The tools available to them are fundamentally broken:
-
-- 📦 **Pill organizers** don't tell you *if* you already took your medication
-- 🔔 **Phone alarms** become background noise after a week
-- 📱 **Existing health apps** overwhelm users with notifications until they abandon them
-- 📋 **Paper calendars** can't prevent double-booking across multiple specialists
-
-The consequences are real:
-
-> **76% of people with chronic conditions miss medications at least sometimes.**  
-> The #1 reason? They forgot.
-
-And appointment management is, in the words of one participant, *"a logistical nightmare"*  especially when coordinating between 3–5 different specialists who don't communicate with each other.
-
-### The Gap
-
-Most health apps make one of two mistakes: they're either too simple (just a glorified alarm) or too complex (overwhelming dashboards full of features nobody asked for). Neither solves the real problems people face every day.
-
----
-
-## The Solution
-
-The Health Companion App takes a different approach: **adaptive design**.
-
-Rather than building one interface for an imaginary "average user," the app offers three modes:
-
-| Mode | For | Key Design Choices |
-|---|---|---|
-| 🟢 **Simple** | Tech beginners, seniors | 60pt+ touch targets, 24pt font, voice reminders, one task per screen |
-| 🔵 **Standard** | Everyday users | Calendar integration, smart notifications, quick-tap logging |
-| ⚫ **Advanced** | Power users | Data visualization, health exports, symptom trend analysis |
-
-**Core features across all modes:**
-- ✅ Medication confirmation with timestamps (solves "did I take it?")
-- 📅 Smart appointment scheduling with clustering
-- 📷 OCR pill bottle scanning for easy onboarding
-- 👨‍👩‍👧 Caregiver sharing with granular permissions
-- 🌙 "Bad Day Mode" for flare-ups and tough days
-
----
-
-## Research
+## Research & Discovery
 
 ### Methodology
+To balance qualitative depth with quantitative scale, I utilized a mixed-methods approach:
 
-I used two complementary research methods to gather both qualitative depth and quantitative scale:
+| Method | Count | Duration | Format |
+| :--- | :--- | :--- | :--- |
+|  **Interviews** | 10 | 30–45 min | Semi-structured Video Calls |
+|  **Surveys** | 50 | 5–7 min | Patient Advocacy Forums |
+| **Total Cohort** | **60** | | |
 
-| Method | Participants | Duration | Format |
-|---|---|---|---|
-| Semi-structured interviews | 10 | 30–45 min | Video calls |
-| Online surveys | 50 | 5–7 min | Health forums & patient advocacy groups |
-
-**Total: 60 participants**
-
-Participant breakdown:
-- **Ages:** 18–75+ (interviews: 29–73)
-- **Gender:** 60% female, 40% male
-- **Conditions:** Hypertension (56%), Diabetes (44%), Arthritis (28%), Heart Disease (24%)
-- **Tech proficiency:** Expert 20% / Comfortable 36% / Basic 32% / Beginner 12%
-- **Medications:** Average of 5–6 per day
+**Demographic Snapshot:**
+* **Age:** 18–75+ (Median: ~50) | **Gender:** 60% F / 40% M
+* **Conditions:** Hypertension (56%), Diabetes (44%), Arthritis (28%), Heart Disease (24%)
+* **Tech Literacy:** Expert (20%) | Comfortable (36%) | Basic (32%) | Beginner (12%)
 
 ---
 
-### What the Interviews Revealed
+### Qualitative Insights (The Interviews)
 
-I conducted a 19-question semi-structured interview covering medication habits, appointment management, technology usage, and health concerns. The conversations were revealing not just for *what* people said, but for the emotion behind it:
+The emotion behind the data revealed deep anxieties surrounding medication management.
 
-> *"I'll stand there staring at the organizer wondering, 'Did I take these already?' It's scary because with my blood pressure medication, you can't double up."*  
-> — Margaret Chen, 68
+> *"I'll stand there staring at the organizer wondering, 'Did I take these already?' It's scary because with my blood pressure medication, you can't double up."*
+> — **Margaret C., 68**
 
-> *"I've tried probably six different medication apps. They all start out great, but then the notifications become overwhelming."*  
-> — James Rodriguez, 42
+> *"On my worst days, I can barely get out of bed. I need something really easy to use even when I'm in brain fog."*
+> — **Emily N., 45**
 
-> *"I have to go to an infusion center once a month for my MS medication. It's a three-hour appointment... scheduling it is a logistical nightmare."*  
-> — Sarah Patel, 36
+**Top Pain Points (N=10):**
 
-> *"On my worst days, I can barely get out of bed. I need something really easy to use even when I'm in brain fog."*  
-> — Emily Nguyen, 45
+| Severity | Impact Scale | User Pain Point |
+| :---: | :--- | :--- |
+| `10/10` | 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 | Medication adherence |
+| `09/10` | 🟧🟧🟧🟧🟧🟧🟧🟧🟧⬛ | Appointment coordination |
+| `07/10` | 🟨🟨🟨🟨🟨🟨🟨⬛⬛⬛ | Fragmented systems |
+| `06/10` | 🟩🟩🟩🟩🟩🟩⬛⬛⬛⬛ | Accessibility needs |
+---
 
-**Top pain points (out of 10 interviews):**
+### Quantitative Validation (The Survey)
 
-| Pain Point | Reported by |
-|---|---|
-| Medication adherence | 10/10 |
-| Appointment coordination | 9/10 |
-| Fragmented systems | 7/10 |
-| Accessibility needs | 6/10 |
-| Notification fatigue | 3/10 |
+50 respondents quantified the exact scale of the problems identified in the interviews.
+
+#### Adherence Breakdown
+`76%` Miss medications at least sometimes
+`76%` Cite forgetting as the primary reason
+`64%` Rely on pure memory/routine (which fails)
+`28%` Suffer from dosage/timing confusion
+
+#### Feature Priorities
+| Rank | Feature Request | Demand |
+| :---: | :--- | :--- |
+| **1** | Medication reminders | **88%** |
+| **2** | Appointment reminders | **76%** |
+| **3** | Medication tracking/history | **56%** |
+| **4** | Doctor communication | **44%** |
+
+#### Trust & Accessibility
+* **72%** are extremely concerned about health data privacy.
+* **64%** absolutely require large text and simple navigation.
 
 ---
 
-### What the Survey Revealed
+### 8 Core Design Pillars
 
-50 survey respondents confirmed and quantified what the interviews suggested:
+These synthesized findings serve as the absolute constraints for the UI/UX design phase:
 
-#### Medication Adherence
+1.   **Beyond Forgetting:** Adherence requires confirmation, timing, and visual ID.
+2.   **Notification Harmony:** Over-notifying guarantees app abandonment.
+3.   **Fluid Interfaces:** A 20% Expert / 44% Beginner split demands an adaptive UI.
+4.   **Logistical Triage:** 40% juggle 7+ appointments/year; calendar sync is vital.
+5.   **Bridging the Silos:** The app must centralize data from disconnected providers.
+6.   **Accessibility First:** 56% have physical/visual needs; WCAG compliance is mandatory.
+7.   **Bulletproof Privacy:** Data must be perceived (and built) as highly secure.
+8.   **The Caregiver Loop:** 32% rely on family, necessitating a multi-user permission model.
 
-```
-76% miss medications at least sometimes
-76% cite forgetting as the primary reason
-64% rely on memory/routine (which fails them)
-28% confused about dosage or timing
-```
+## User Personas
 
-#### Feature Priorities (Top 3 Selections)
-
-| Feature | Selected By |
-|---|---|
-| Medication reminders | **88%** |
-| Appointment reminders | **76%** |
-| Medication tracking/history | 56% |
-| Doctor communication | 44% |
-| Refill reminders | 40% |
-| Health data tracking | 32% |
-
-#### Accessibility & Privacy
-
-```
-64% — need large text / simple navigation (essential or very important)
-56% — have some form of accessibility need
-72% — very or extremely concerned about health data privacy
-```
+Two data-driven personas were developed from the primary research, representing the two most underserved user segments in the current health-tech market. 
 
 ---
 
-### 8 Key Research Insights
-
-From the combined 60-participant study, eight core findings guided every design decision:
-
-1. **Medication adherence is multifaceted** — Not just forgetting; confirmation, timing, and identification are all problems.
-2. **Notification fatigue is real** — Users abandon apps that over-notify.
-3. **One size does NOT fit all** — 44% beginner/basic vs. 20% expert users demand an adaptive interface.
-4. **Appointment management is a logistical nightmare** — 40% have 7+ appointments/year.
-5. **Healthcare is fragmented** — 8/10 participants see multiple providers who don't communicate.
-6. **Accessibility is essential, not optional** — 56% have real accessibility needs.
-7. **Trust and privacy are non-negotiable** — 72% very/extremely concerned about data.
-8. **Caregiver support is critical** — 32% rely on family members for medication help.
-
----
-
-## Personas
-
-Two data-driven personas were developed from the research, representing the two most underserved user segments.
-
----
-
-### Persona 1: Margaret Chen — The Simplicity Seeker
+### 👵🏻 Persona 1: Margaret Chen — *The Simplicity Seeker*
+> *"I don't want something complicated. I just want to know: Did I take my pills? When is my next appointment? That's it."*
 
 ![Margaret Chen Persona](Persona/persona_margaret_chen.png)
 
-| | |
-|---|---|
-| **Age** | 68 |
-| **Occupation** | Retired teacher |
-| **Location** | Suburban |
-| **Tech proficiency** | Beginner |
-| **Conditions** | Type 2 Diabetes, Hypertension |
-| **Medications** | 5 daily |
-| **Appointments/year** | 6–8 |
-| **Lives with** | Alone; daughter visits weekly |
+**Demographics & Context**
 
-**Goals:** Take medications correctly and on time without confusion.
+| Age | Occupation | Tech Level | Lives With |
+| :--- | :--- | :--- | :--- |
+| 68 | Retired Teacher | 🟨 Beginner | Alone *(Daughter visits weekly)* |
 
-**Pain Points:**
-- Daily "Did I already take this?" anxiety
-- Fear of dangerous double-dosing (blood pressure meds)
-- Small text on pill bottles is hard to read
-- Complex timing rules (with food, before meals, etc.)
-- Technology anxiety — struggles with new apps
+** Health Profile**
+* **Conditions:** `Type 2 Diabetes` `Hypertension`
+* **Regimen:** 5 daily medications | 6–8 specialist appointments/year
 
-**What she needs:**
-- Large, simple interface (60×60pt minimum touch targets)
-- Voice reminders for medications
-- Visual confirmation with timestamps
-- Medication photos for identification
-- Caregiver sharing with her daughter
+**Core Goal:** Take medications correctly and on time without cognitive overload or confusion.
 
-> *"I don't want something complicated. I just want to know: Did I take my pills? When is my next appointment? That's it."*
+|  Pain Points |  What She Needs (Design Requirements) |
+| :--- | :--- |
+| • Daily *"Did I already take this?"* anxiety | • **Large Interface:** 60×60pt minimum touch targets |
+| • Fear of dangerous double-dosing (BP meds) | • **Audio Cues:** Voice reminders for medications |
+| • Small text on pill bottles is illegible | • **Clear Status:** Visual confirmation with timestamps |
+| • Complex timing rules (with food, etc.) | • **Visual ID:** Medication photos for identification |
+| • General technology anxiety | • **Support:** Caregiver sharing portal for her daughter |
 
-**Represents:** ~30% of users — Simplicity Seekers, aged 65–75+
+* **Segment Representation:** ~30% of users (Ages 65–75+)*
 
 ---
 
-### Persona 2: Sarah Patel — The Busy Balancer
+### 👩🏽‍💻 Persona 2: Sarah Patel — *The Busy Balancer*
+> *"I'm managing a complex condition while working full-time and raising kids. I need an app that simplifies my life, not complicates it."*
 
 ![Sarah Patel Persona](Persona/persona_sarah_patel.png)
 
-| | |
-|---|---|
-| **Age** | 36 |
-| **Occupation** | Marketing Manager |
-| **Location** | Suburban |
-| **Tech proficiency** | Advanced |
-| **Conditions** | Multiple Sclerosis, Depression |
-| **Medications** | 5 daily + monthly infusion |
-| **Appointments/year** | 12+ |
-| **Lives with** | Husband + 2 children (ages 7 and 10) |
+**Demographics & Context**
 
-**Goals:** Efficiently manage complex health needs while maintaining work and family life.
+| Age | Occupation | Tech Level | Lives With |
+| :--- | :--- | :--- | :--- |
+| 36 | Marketing Manager | 🟦 Advanced | Husband + 2 children *(Ages 7 & 10)* |
 
-**Pain Points:**
-- Complex schedule (5 daily meds + monthly 3-hour infusion)
-- Coordinating 4+ specialists who don't talk to each other
-- Notification fatigue from existing apps
-- Managing side effects and symptom tracking
-- Health management feels like a "part-time job"
+** Health Profile**
+* **Conditions:** `Multiple Sclerosis` `Clinical Depression`
+* **Regimen:** 5 daily meds + 1 monthly infusion | 12+ appointments/year
 
-**What she needs:**
-- Smart, calendar-aware notifications
-- One-tap medication logging
-- Appointment clustering to reduce travel time
-- Google Calendar integration
-- Data visualization and symptom trends
+** Core Goal:** Efficiently manage complex, overlapping health needs while maintaining career and family life.
 
-> *"I'm managing a complex condition while working full-time and raising kids. I need an app that simplifies my life, not complicates it."*
+|  Pain Points |  What She Needs (Design Requirements) |
+| :--- | :--- |
+| • Complex schedule (daily meds + 3hr infusions) | • **Automation:** Smart, calendar-aware notifications |
+| • Coordinating 4+ siloed specialists | • **Frictionless:** One-tap medication logging |
+| • Severe notification fatigue from other apps | • **Logistics:** Appointment clustering to save time |
+| • Tracking symptoms alongside side-effects | • **Ecosystem:** Native Google Calendar integration |
+| • Health management feels like a "part-time job" | • **Insights:** Data visualization and symptom trends |
 
-**Represents:** ~40% of users — Busy Balancers, aged 33–58
+* **Segment Representation:** ~40% of users (Ages 33–58)*
 
 ---
 
-### Persona Comparison
+### Persona Comparison: The Creative Tension
 
-| | Margaret | Sarah |
-|---|---|---|
-| **Age** | 68 | 36 |
-| **Tech Level** | Beginner | Advanced |
-| **Interface Mode** | Simple | Standard |
-| **Primary Need** | Simple medication reminders | Efficient health management |
-| **Key Feature** | Large buttons + voice reminders | Smart notifications + data viz |
-| **Main Fear** | "Did I take my medication?" | Running out of time |
-| **Success = ?** | Confidence + adherence | Time saved + symptom insights |
+*The stark contrast between these two personas created our primary design constraint. Every feature, flow, and UI element had to be validated against both extremes to ensure the "Adaptive Design" framework actually worked.*
 
-The contrast between these two personas created productive creative tension — every design decision had to be tested against both of them.
+| Attribute | 👵🏻 Margaret *(The Simplicity Seeker)* | 👩🏽‍💻 Sarah *(The Busy Balancer)* |
+| :--- | :--- | :--- |
+| **Age & Tech Level** | 68 \| 🟨 Beginner | 36 \| 🟦 Advanced |
+| **Target UI Mode** | 🟢 Simple Mode | 🔵 Standard / Advanced Mode |
+| **Primary Need** | Foolproof medication reminders | Efficient, holistic health management |
+| **Key Feature** | Huge buttons + voice reminders | Smart notifications + data visualization |
+| **Main Fear** | "Did I take my medication?" *(Double dosing)* | Running out of time *(Logistical failure)* |
+| **Success Metric** | Confidence + Adherence | Time Saved + Symptom Insights |
 
 ---
 
@@ -296,7 +234,7 @@ Margaret's journey begins with **skepticism** and ends with her becoming an **ad
 | 3. First Use | 7:00 AM — first independent reminder | Nervous → Proud | Voice reminder → pill photo → "I TOOK IT" → green checkmark |
 | 4. Week 1 | Twice-daily logging becomes routine | Confident → Proud | Caregiver notifications, positive reinforcement |
 | 5. Appointment | 3-day reminder before Dr. Smith visit | Relieved → Prepared | Multi-stage reminders, printable medication list |
-| **6. Key Moment** ⭐ | 10:00 AM — "Did I take my pills?" | **Anxious → Relieved** | Opens app: "Morning meds — Taken ✓ at 7:05 AM" |
+| **6. Key Moment** | 10:00 AM — "Did I take my pills?" | **Anxious → Relieved** | Opens app: "Morning meds — Taken ✓ at 7:05 AM" |
 | 7. Long-term | App is daily companion; she recommends it | Confident → Advocate | 98% adherence, zero missed appointments |
 
 **Margaret's Emotional Arc:**
@@ -337,309 +275,275 @@ Frustrated → Impressed → Satisfied → Surprised → Delighted → Grateful 
 
 ---
 
-## Storyboards
+## 🎬 Storyboards & Conceptualization
 
-### Storyboard 1: Margaret's Morning Medication Routine
-![PHOTO-2026-02-21-19-07-45](https://github.com/user-attachments/assets/cc7d2541-a001-4c7a-8c94-87ed751e94ed)
+To map out the emotional and practical journey of our personas, I developed storyboards to visualize the app in real-world contexts. 
 
+### 👵🏻 Scenario A: Margaret's Morning Routine
+<img src="https://github.com/user-attachments/assets/cc7d2541-a001-4c7a-8c94-87ed751e94ed" width="100%" style="border-radius: 8px; max-width: 800px;" alt="Margaret Storyboard" />
 
-**Features demonstrated:** Voice reminder → visual pill photo → oversized action button → timestamp confirmation
-
----
-
-### Storyboard 2: Sarah's Appointment Scheduling
-
-<img width="1536" height="2752" alt="Gemini_Generated_Image_u8akoxu8akoxu8ak" src="https://github.com/user-attachments/assets/ed573f75-6e7e-40cb-a0b1-94860390bcc9" />
-
-
-**Features demonstrated:** Calendar integration → intelligent clustering → time savings visualization → auto-generated preparation checklists
-
-
-### More
-<img width="1536" height="2752" alt="Gemini_Generated_Image_tbjrartbjrartbjr" src="https://github.com/user-attachments/assets/a0556173-241b-4e4f-ae8b-4dafce309a57" />
-
-<img width="1536" height="2752" alt="Gemini_Generated_Image_scfw5oscfw5oscfw" src="https://github.com/user-attachments/assets/0df04642-c308-44fb-b83e-a5479cc5b8f2" />
-<img width="1536" height="2752" alt="Gemini_Generated_Image_q1j4ouq1j4ouq1j4" src="https://github.com/user-attachments/assets/a25fb197-d31f-428a-a8c9-261cd852ebb0" />
+> ✨ **Flow:** Voice Reminder ➔ Visual Pill Photo ➔ Oversized Action Button ➔ Timestamp Confirmation
 
 ---
 
-## Wireframes
+### 👩🏽‍💻 Scenario B: Sarah's Appointment Scheduling & Additional Flows
+*To save vertical space, these journey mappings are displayed as a unified storyboard gallery.*
 
-The design system was built before any screens, ensuring consistency across all three modes.
+| Appointment Scheduling | Symptom Tracking | Caregiver Sync | Bad Day Mode |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/ed573f75-6e7e-40cb-a0b1-94860390bcc9" width="220" style="border-radius:12px;" /> | <img src="https://github.com/user-attachments/assets/a0556173-241b-4e4f-ae8b-4dafce309a57" width="220" style="border-radius:12px;" /> | <img src="https://github.com/user-attachments/assets/0df04642-c308-44fb-b83e-a5479cc5b8f2" width="220" style="border-radius:12px;" /> | <img src="https://github.com/user-attachments/assets/a25fb197-d31f-428a-a8c9-261cd852ebb0" width="220" style="border-radius:12px;" /> |
 
-### Design System
-
-**Typography by Mode**
-
-| Element | Simple Mode | Standard Mode | Advanced Mode |
-|---|---|---|---|
-| Body text | 18–24pt | 16pt | 14pt |
-| Headings | 32pt+ | 24pt | 20pt |
-| Minimum | 18pt | 14pt | 12pt |
-
-**Touch Targets**
-- Simple Mode: 60×60pt minimum, 80×80pt for primary actions
-- Standard Mode: 44×44pt minimum (Apple HIG standard)
-- Accessibility: WCAG AA (4.5:1 contrast ratio) throughout
+> ✨ **Flow:** Calendar Integration ➔ Intelligent Clustering ➔ Time-Savings Visualization ➔ Prep Checklists
 
 ---
 
-### Screen 1 — Welcome & Mode Selection
+## Wireframes & Architecture
 
-![Welcome & Mode Selection](wireframes/1frame.png)
+Before drawing a single screen, I established a strict, mode-based design system to ensure absolute consistency across the Simple, Standard, and Advanced interfaces.
 
-Three mode cards are presented at launch with clear plain-language descriptions. A "Need help? Invite a family member" option supports caregiver-assisted setup for users like Margaret.
+### The Adaptive Design System
 
-*Research basis: 73% of participants worried about app complexity on first use.*
-
----
-
-### Screen 2 — Home Dashboard
-
-![Home Dashboard](wireframes/2frame.png)
-
-The home screen opens with a personalized greeting and puts "Today's Medications" at the very top because that's the question users are asking the moment they open the app. Color-coded status indicators and timestamps eliminate all ambiguity.
-
-*Research basis: Solving the #1 "Did I take it?" question in under 5 seconds.*
+| Element | 🟢 Simple Mode | 🔵 Standard Mode | ⚫ Advanced Mode |
+| :--- | :--- | :--- | :--- |
+| **Body Typography** | 18–24pt | 16pt | 14pt |
+| **Headings** | 32pt+ | 24pt | 20pt |
+| **Minimum Text** | 18pt | 14pt | 12pt |
+| **Touch Targets** | 60×60pt *(80pt for primary)* | 44×44pt *(Apple HIG)* | 44×44pt |
+| **Accessibility** | WCAG AA *(4.5:1 Contrast)* | WCAG AA | WCAG AA |
 
 ---
 
-### Screen 3 — Home Dashboard (Alternate View)
+### 📱 Core Screen Architecture
 
-![Home Dashboard Alternate](wireframes/3frame.png)
+<img src="wireframes/1frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
 
-The Quick Actions 2×2 grid offers fast navigation to My Health, Appointments, Settings, and Help accessible without hunting through menus.
+#### 01 / Welcome & Mode Selection
+Three mode cards are presented at launch with clear, plain-language descriptions. A *"Need help? Invite a family member"* option supports caregiver-assisted setup for users like Margaret.
+> 🔬 **Research Insight:** 73% of participants worried about app complexity on first use.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/2frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 02 / Home Dashboard
+The home screen opens with a personalized greeting and puts "Today's Medications" at the very top—because that's the question users are asking the moment they open the app. Color-coded status indicators and timestamps eliminate all ambiguity.
+> 🔬 **Research Insight:** Built to solve the #1 *"Did I take it?"* question in under 5 seconds.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/3frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 03 / Dashboard (Alternate Quick View)
+A Quick Actions 2×2 grid offers fast navigation to *My Health*, *Appointments*, *Settings*, and *Help*—making core features instantly accessible without hunting through nested hamburger menus.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/4frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 04 / Medication Directory
+Each medication card shows a photo for visual identification, special instructions *(e.g., "Take with food")*, and a color-coded status indicator. Filter chips help users seamlessly browse by *All / Daily / As-needed / Weekly*.
+> 🔬 **Research Insight:** 6/10 interview participants struggled to identify their medications by chemical name alone.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/5frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 05 / Add Medication (OCR Scan)
+A dual-input system defaults to camera scanning. The OCR reader auto-detects medication name, dosage, and form directly from the pill bottle, eliminating the high-error-rate manual text entry that corrupts health records.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/6frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 06 / Active Reminder State
+The reminder screen has one dominant action: a full-width green **"I TOOK IT"** button. The medication photo is enormous. Secondary options are visually de-emphasized to prevent accidental taps. Includes a 30-second "Undo" window.
+> 🔬 **Research Insight:** A single, massive CTA reduces cognitive load; immediate confirmation quells anxiety.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/7frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 07 / Daily Medication Log
+The log page opens with the instant answer at the top: *"All medications taken ✓"* or a specific count of what's pending. A chronological timeline layout with timestamps paints the full picture.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/8frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 08 / Appointment Directory
+Appointment cards automatically generate preparation checklists *(bring insurance card, medication list, notes for doctor)*. Multi-stage reminders *(3 days, 1 day, morning-of)* configure automatically based on the appointment type.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/9frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 09 / Smart Scheduling Engine
+The scheduling assistant analyzes the user's connected calendar to suggest optimal days. When multiple appointments are needed, it proposes clustering them to save travel time, displaying concrete metrics: *"💰 Save 2 hrs travel / Save $15 parking."*
+> 🔬 **Research Insight:** Directly targets Sarah's #1 pain point: coordination across 4+ specialists.
+
+<br clear="all" />
+<br>
+
+<img src="wireframes/10frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
+
+#### 10 / Settings & Accessibility
+Mode switching, text size with live preview, high contrast toggles, voice commands, and caregiver connection management are all surfaced beautifully. Critical accessibility features are never hidden.
+
+<br clear="all" />
+
+---
+## 📱 High-Fidelity Prototype
+
+The final interactive prototype was constructed in **Figma**, specifically optimized and scaled for the **iPhone 17 Pro** display.
+
+[![Figma Prototype](https://img.shields.io/badge/🎨_View_Interactive_Prototype-Figma-black?style=for-the-badge&logo=figma)](https://www.figma.com/design/NAPWQgbW47pHnod1PSxhqm/Untitled?node-id=0-1&t=RqtKJFwCyFmmnI4S-1)
+
+|  **Scope** |  **Interactivity** |  **Motion Design** |
+| :--- | :--- | :--- |
+| **~30** Core Frames | **50–70** Clickable Hotspots | Smart Animate, Dissolve, Slide |
+
+###  Core User Flows
+*Mapping the exact tap-by-tap journey for our primary use cases.*
+
+**01 / First-Time Onboarding** *(8 Screens)*
+> `Welcome` ➔ `Mode Selection` ➔ `Profile` ➔ `OCR Scan` ➔ `Verify` ➔ `Notif. Prefs` ➔ `Success` ➔ `Home`
+
+**02 / Medication Management** *(5 Screens)*
+> `Home Dashboard` ➔ `Medication List` ➔ `Add Med` ➔ `Active Reminder` ➔ `Logged Confirmation`
+
+**03 / Appointment Scheduling** *(7 Screens)*
+> `Appointments` ➔ `Add New` ➔ `Smart Dates` ➔ `Clustering Proposal` ➔ `Optimized Schedule` ➔ `Book` ➔ `Success`
+
+**04 / Settings & Accessibility** *(3 Screens)*
+> `Settings Menu` ➔ `Mode Toggle` ➔ `Invite Caregiver`
 
 ---
 
-### Screen 4 — Medication List
+##  Usability Testing Plan
 
-![Medication List](wireframes/4frame.png)
+Before handing off to development, the prototype must be validated against real users to ensure our "Adaptive Design" hypothesis holds up under friction.
 
-Each medication card shows a photo for visual identification, special instructions (e.g., "Take with food"), and a color-coded status indicator. Filter chips help users browse by All / Daily / As-needed / Weekly.
+###  Testing Objectives
+|  Primary Goals (Functional) |  Secondary Goals (Attitudinal) |
+| :--- | :--- |
+| **1.** Verify task completion across all core flows | **4.** Gauge perceived value and adoption intent |
+| **2.** Assess first-time learnability without instruction | **5.** Understand notification preferences |
+| **3.** Validate accessibility for *Simple Mode* users | **6.** Capture emotional response and NPS |
+| **4.** Identify error-prone interaction points | |
 
-*Research basis: 6/10 interview participants struggled to identify their medications by name alone.*
+###  Participant Matrix
+* **Cohort Size:** 5–8 participants per iterative round.
+* **Demographics:** Age mix of 30–45 *(The Busy Balancers)* and 60–75+ *(The Simplicity Seekers)*.
+* **Tech Literacy Split:** Minimum 2 Beginner/Basic + 2 Intermediate/Advanced users per round.
 
----
+###  Task Scenarios & Metrics
 
-### Screen 5 — Add Medication (OCR Scan)
+| # | Task Scenario | Key Metric / Success Indicator |
+| :---: | :--- | :--- |
+| **1** | Complete first-time onboarding | Completion rate, time-on-task, drop-off rate |
+| **2** | Log a medication from a reminder | Time to tap, post-task confidence rating |
+| **3** | Answer: *"Did I take my morning meds?"* | Time to answer *(Target: <5 seconds)* |
+| **4** | Add a new medication via OCR scan | Completion rate, manual correction count |
+| **5** | Schedule 3 clustered appointments | Clustering comprehension, total time saved |
+| **6** | Invite caregiver with view-only access | Feature discoverability, privacy confidence |
 
-![Add Medication](wireframes/5frame.png)
-
-A dual-input system defaults to camera scanning. The OCR reader auto-detects medication name, dosage, and form from the pill bottle eliminating the high-error-rate manual text entry that causes incorrect medication records.
-
----
-
-### Screen 6 — Medication Reminder
-
-![Medication Reminder](wireframes/6frame.png)
-
-The reminder screen has one dominant action: a full-width green **"I TOOK IT"** button. The medication photo is large and prominent. Secondary options (Snooze 15 min, Skip this dose) are visually de-emphasized to reduce accidental taps. A 30-second undo window catches mistakes.
-
-*Research basis: Single large CTA reduces cognitive load for Margaret; immediate confirmation reduces anxiety.*
-
----
-
-### Screen 7 — Daily Medication Log
-
-![Daily Medication Log](wireframes/7frame.png)
-
-The log page opens with the instant answer at the top: *"All medications taken ✓"* or a specific count of what's pending. A timeline layout (Morning / Afternoon / Evening) with timestamps makes the full picture clear. Adherence percentage is celebrated positively.
-
----
-
-### Screen 8 — Appointment List
-
-![Appointment List](wireframes/8frame.png)
-
-Appointment cards include auto-generated preparation checklists (bring insurance card, medication list, notes for doctor). Multi-stage reminders (3 days, 1 day, morning-of) are configured automatically by appointment type.
+###  Baseline Success Criteria
+`≥ 85%` Task Completion Rate  
+`≥ 70` System Usability Scale (SUS) Score  
+`≤ 2.5` Average Task Difficulty *(5-pt Likert Scale)* `4/5` "Did I take it?" Confidence Score  
+`0` Critical Blocking Errors  
 
 ---
-
-### Screen 9 — Smart Appointment Scheduling
-
-![Appointment Scheduling](wireframes/9frame.png)
-
-The scheduling assistant analyzes the user's work calendar to suggest optimal appointment days. When multiple appointments are needed, it proposes clustering them to save travel time and displays concrete savings: *"💰 Save 2 hrs travel" / "💰 Save $15 parking."*
-
-*Research basis: Sarah's #1 pain point coordination across 4+ specialists.*
-
----
-
-### Screen 10 — Settings & Accessibility
-
-![Settings & Accessibility](wireframes/10frame.png)
-
-Mode switching, text size with live preview, high contrast and voice command toggles, and caregiver connection management all surfaced clearly without hiding critical features in nested menus.
-
----
-
-## Prototype
-
-The clickable prototype was built in **Figma** targeting the **iPhone 17 Pro**.
-https://www.figma.com/design/NAPWQgbW47pHnod1PSxhqm/Untitled?node-id=0-1&t=RqtKJFwCyFmmnI4S-1
-
-| | |
-|---|---|
-| **Total screens** | ~25–30 frames |
-| **Interactive hotspots** | ~50–70 clickable elements |
-| **Transitions** | Smart Animate, Dissolve, Slide |
-
-### Four Complete User Flows
-
-**Flow 1: First-Time Onboarding** (8 screens)  
-`Welcome → Mode Selection → Profile → Add Medications (OCR) → Scan Result → Notification Prefs → Success → Home`
-
-**Flow 2: Medication Management** (5 screens)  
-`Home → Medication List → Add Medication → Reminder → Logged Confirmation`
-
-**Flow 3: Appointment Scheduling** (7 screens)  
-`Appointments → Add Appointment → Smart Date Suggestions → Clustering Proposal → Optimized Schedule → Booking → Success`
-
-**Flow 4: Settings & Accessibility** (3 screens)  
-`Settings Menu → Mode Selection → Invite Caregiver`
-
----
-
-## Usability Testing Plan
-
-### Testing Goals
-
-**Primary:**
-1. Verify task completion across all core flows
-2. Assess first-time learnability without instruction
-3. Validate accessibility for Simple Mode users
-4. Identify error-prone interaction points
-
-**Secondary:**
-5. Gauge perceived value and adoption intent
-6. Understand notification preferences
-7. Capture emotional response and satisfaction (NPS)
-
-### Participants
-
-- 5–8 participants per testing round
-- Age mix: 30–45 and 60–75+
-- At least 2 beginner/basic + 2 intermediate/advanced users
-- Mapped to personas: Margaret-like users test Simple Mode; Sarah-like users test Standard Mode
-
-### Task Scenarios
-
-| # | Task | Key Metrics |
-|---|---|---|
-| 1 | Complete first-time onboarding | Completion rate, time, step drop-offs |
-| 2 | Log a medication from a reminder | Time to tap, confidence rating |
-| 3 | Answer "Did I take my morning meds?" | Time to answer (target: <5 sec) |
-| 4 | Add a new medication via OCR scan | Completion rate, error count |
-| 5 | Schedule 3 appointments with clustering | Clustering comprehension, time saved |
-| 6 | Invite a caregiver with view-only permission | Discoverability, privacy confidence |
-
-### Success Criteria
-
-| Metric | Target |
-|---|---|
-| Overall task completion rate | ≥ 85% |
-| System Usability Scale (SUS) score | ≥ 70 |
-| Average task difficulty (5-pt Likert) | ≤ 2.5 |
-| Critical blocking errors | 0 |
-| "Did I take it?" confidence | ≥ 4/5 |
-
----
-
 ## Key Design Decisions
 
-Each major design element traces directly back to a specific research finding:
+Great UX is about justification. Every major feature in the Health Companion App traces directly back to a specific, quantifiable research finding. 
 
-### Decision 1: Adaptive Three-Mode Interface
-**Research trigger:** 44% beginner/basic users vs. 20% expert users  
-**Problem:** A single interface would compromise the experience for both extremes  
-**Solution:** Mode selection at onboarding, switchable at any time in Settings  
-**Impact:** Margaret gets a screen with 3 options max; Sarah gets data dashboards
+<br>
 
-### Decision 2: Timestamped Confirmation System
-**Research trigger:** 10/10 interview participants experienced "Did I take it?" anxiety  
-**Problem:** No current solution provides undeniable proof of medication taken  
-**Solution:** Every logged dose gets a permanent timestamp shown on the home dashboard  
-**Impact:** Margaret's core anxiety is resolved within 3 seconds of opening the app
+### 01 / The Adaptive Three-Mode Interface
+|  The Insight |  The Problem |  The Innovation |  The Impact |
+| :--- | :--- | :--- | :--- |
+| Our research showed a massive tech literacy gap: **44% Beginner vs. 20% Expert**. | A single interface would either overwhelm Margaret or under-serve Sarah. | Mode selection at onboarding *(Simple, Standard, Advanced)*, switchable anytime. | Margaret gets a foolproof 3-option screen; Sarah gets deep data dashboards. |
 
-### Decision 3: Smart (Not Dumb) Notifications
-**Research trigger:** 3/10 participants had abandoned apps specifically due to notification overload  
-**Problem:** Generic alarms get ignored; too many reminders cause abandonment  
-**Solution:** Escalating reminders (gentle → persistent), calendar-context awareness, user-set quiet hours  
-**Impact:** Notifications feel helpful, not harassing
+<br>
 
-### Decision 4: Appointment Clustering
-**Research trigger:** 9/10 interview participants cited appointment coordination as a major pain point; 40% have 7+ appointments/year  
-**Problem:** Scheduling 3–4 specialists requires hours of juggling calendars  
-**Solution:** App analyzes work calendar and proposes clustering multiple appointments on the same day  
-**Impact:** Sarah's #1 time sink calendar coordination is solved automatically
+### 02 / Timestamped Confirmation System
+|  The Insight |  The Problem |  The Innovation |  The Impact |
+| :--- | :--- | :--- | :--- |
+| **10/10** interview participants experienced chronic *"Did I take it?"* anxiety. | Existing solutions (like pill boxes or alarms) offer zero proof of a completed action. | Every logged dose receives a permanent, highly visible timestamp on the dashboard. | Margaret's core anxiety is definitively resolved within 3 seconds of opening the app. |
 
-### Decision 5: "Bad Day Mode"
-**Research trigger:** Emily (45): "On my worst days, I can barely get out of bed"  
-**Problem:** Illness itself makes managing illness harder  
-**Solution:** One-tap mode that strips the interface to essentials + auto-notifies designated caregiver  
-**Impact:** Users are supported exactly when they need it most
+<br>
 
-### Decision 6: Accessibility-First, Not Accessibility-Added
-**Research trigger:** 56% have some accessibility need  
-**Problem:** Accessibility features feel segregated in most apps ("go to accessibility settings")  
-**Solution:** Large touch targets, high contrast, and voice reminders are present across all modes invisible infrastructure that elevates the experience for everyone  
-**Impact:** Features designed for Margaret benefit all users under stress, distraction, or low-light conditions
+### 03 / Smart (Not Dumb) Notifications
+|  The Insight |  The Problem |  The Innovation |  The Impact |
+| :--- | :--- | :--- | :--- |
+| **30%** of participants had abandoned previous health apps due to notification overload. | Generic alarms get ignored; too many reminders cause rapid app deletion. | Context-aware reminders that escalate *(gentle ➔ persistent)* and respect quiet hours. | Notifications are perceived as a helpful assistant, not a harassing alarm clock. |
 
----
+<br>
+
+### 04 / Appointment Clustering Engine
+|  The Insight |  The Problem |  The Innovation |  The Impact |
+| :--- | :--- | :--- | :--- |
+| **90%** of users cited coordination as a major pain point; 40% juggle 7+ appts/year. | Scheduling 3–4 disconnected specialists requires hours of tedious calendar juggling. | The app analyzes work calendars and proposes clustering appointments on the same day. | Sarah's #1 time-sink is solved automatically, saving significant travel time and PTO. |
+
+<br>
+
+### 05 / "Bad Day Mode"
+|  The Insight |  The Problem |  The Innovation |  The Impact |
+| :--- | :--- | :--- | :--- |
+| *"On my worst days, I can barely get out of bed."* — **Emily, 45** | The physical reality of illness makes managing the logistics of illness significantly harder. | A one-tap mode that strips the UI down to bare essentials and auto-notifies a caregiver. | Users are supported with absolute zero cognitive load exactly when they need it most. |
+
+<br>
+
+### 06 / Accessibility-First Infrastructure
+|  The Insight |  The Problem |  The Innovation |  The Impact |
+| :--- | :--- | :--- | :--- |
+| **56%** of our users have a documented accessibility need *(visual or motor)*. | Accessibility features are usually hidden in nested "Settings" menus as an afterthought. | Huge touch targets, WCAG AA contrast, and voice cues are baked into the core architecture. | Features designed explicitly for Margaret benefit all users under stress or distraction. |
 
 ## Reflections & Takeaways
 
-### How the Process Worked
+### The Paradigm Shift
+The most crucial insight from this project was realizing that every good design decision must be *pulled* out of user research, not invented in a vacuum. 
 
-The most important insight from this project is that every good design decision was *pulled* out of user research not invented. Before the interviews, the obvious assumption was that users simply "forget" medication and need a reminder. The research revealed something more nuanced:
+Before the interviews, my baseline assumption was that users simply "forget" their medication and just need a reminder. The research revealed a much more nuanced reality. Users were battling four distinct systemic failures:
 
-- There's a **confirmation problem** (Did I take it?)
-- There's an **identification problem** (Which pill is this?)
-- There's a **timing problem** (With food? Before breakfast?)
-- There's a **complexity problem** (The schedule itself is overwhelming)
+|  Confirmation |  Identification |  Timing |  Complexity |
+| :--- | :--- | :--- | :--- |
+| *"Did I already take it?"* | *"Which pill is this?"* | *"With food? Before bed?"* | *"This schedule is overwhelming."* |
 
-If I had designed based on the assumption, I would have built a better alarm clock. Instead, I designed a **confirmation system** and that's a completely different product.
-
----
-
-### Challenges & How I Solved Them
-
-**Challenge 1: Designing for both Margaret and Sarah simultaneously**
-
-The two personas have almost opposite needs. Margaret needs extreme simplicity. Sarah needs powerful efficiency features. There's no single interface that satisfies both.
-
-*Solution:* The adaptive three-mode system. Both Margaret and Sarah get a version of the app that feels made for them because it is.
+>  **The Epiphany:** If I had designed based on my initial assumption, I would have just built a better alarm clock. By listening to the data, I designed a **confirmation system**—and that is a fundamentally different product.
 
 ---
 
-**Challenge 2: Making reminders valuable without being annoying**
+###  Challenges & Strategic Solutions
 
-The app's core value *is* reminders. But too many reminders is exactly why users abandon apps. This is a genuine design paradox.
-
-*Solution:* Smart escalation only one gentle reminder initially, escalating to persistent only if ignored. Calendar awareness no interruptions during detected meetings. User control full preference configuration during onboarding.
-
----
-
-**Challenge 3: Keeping the prototype focused**
-
-24 prioritized features and 10+ pain points could easily become a bloated prototype with no coherent experience.
-
-*Solution:* A P0–P3 prioritization matrix. P0 features (must-have for core value) got dedicated screens. P2–P3 features were documented but deferred. The prototype does fewer things but does them excellently.
+| The Design Challenge | The Solution |
+| :--- | :--- |
+| **1. The Persona Paradox**<br>Margaret needs extreme simplicity, while Sarah needs powerful efficiency features. No single interface satisfies both extremes. | **Adaptive Architecture:** The three-mode system ensures both Margaret and Sarah get an experience that feels custom-built for them—because it is. |
+| **2. The Reminder Dilemma**<br>The app's core value is reminders, but notification fatigue is the #1 reason users abandon health apps. | **Smart Escalation:** One gentle reminder initially, escalating to persistent *only* if ignored. Calendar-awareness mutes alerts during meetings. |
+| **3. Scope Creep & Bloat**<br>24 prioritized features and 10+ distinct pain points could easily mutate into a bloated, unusable prototype. | **Ruthless Prioritization:** Using a P0–P3 matrix. Core value flows (P0) got dedicated screens. Nice-to-haves were deferred. The app does fewer things, but does them excellently. |
 
 ---
 
-### 5 Takeaways
+###  Core UX Takeaways
 
-1. **Research prevents assumption-driven design.** The "Did I take it?" confirmation feature is the heart of this app and it never would have existed without user interviews.
+*The five guiding principles I will carry forward into my next role.*
 
-2. **Personas are decision tools, not deliverables.** Every time there was a design conflict, asking "Does this work for Margaret?" and "Does this work for Sarah?" resolved it.
-
-3. **Journey maps reveal what wireframes miss.** The emotional stakes of Margaret's first independent morning use only emerged from journey-level thinking — not screen-level design.
-
-4. **Accessibility benefits everyone.** Features designed for the most constrained user (large touch targets, voice reminders) raise the quality bar for all users.
-
-5. **Scope discipline is a design skill.** Knowing what to leave out is as important as knowing what to include.
+| | Core Principle | The Real-World Application |
+| :---: | :--- | :--- |
+| <br>`01` | **Research prevents assumption-driven design.** | The *"Did I take it?"* timestamp confirmation is the beating heart of this app. It never would have existed without those 10 semi-structured interviews. |
+| <br>`02` | **Personas are decision tools, not deliverables.** | They aren't just PDFs for a portfolio. Every UI conflict was instantly resolved by asking: *"Does this work for Margaret? Does it work for Sarah?"* |
+| <br>`03` | **Journey maps reveal what wireframes miss.** | The high emotional stakes of Margaret's first independent morning routine only emerged from journey-level thinking, not screen-level UI design. |
+| <br>`04` | **Accessibility benefits everyone.** | The "Curb-Cut Effect" is real. Features designed for the most constrained user *(huge touch targets, voice UI)* naturally raised the ease-of-use for all users. |
+| <br>`05` | **Scope discipline is a core design skill.** | Knowing exactly what to leave *out* of a product is just as important as knowing what to include to prevent feature bloat. |
 
 ---
 
