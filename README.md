@@ -47,26 +47,4 @@ The clickable prototype covers ~25–30 screens across four complete user flows:
 
 ---
 
-## Project Structure
-
-```
-├── CASE_STUDY.md              ← Full UX case study (start here)
-├── FINAL_REPORT.md            ← Academic report
-├── user_research/
-│   ├── INTERVIEWS.md          ← 10 interview transcripts
-│   └── SURVEYS.md             ← 50 survey responses
-├── wireframes/                ← Wireframe screenshots (1frame–10frame)
-├── Persona/                   ← Persona illustrations
-├── Storyboard/                ← Storyboard images
-├── User Flow Chart/           ← Flow chart visuals
-├── user_personas.md
-├── user_journey_maps.md
-├── storyboards_flowcharts.md
-├── wireframes.md
-├── figma_prototype_guide.md
-└── usability_testing_plan.md
-```
-
----
-
 *SOEN 357 Final Mini Project — Concordia University, Winter 2026*
