@@ -13,11 +13,6 @@
 
 ---
 
-##  Overview
-
-> **The Health Companion App** is a mobile application designed to help individuals with chronic health conditions manage their medications and appointments without the cognitive overload, notification fatigue, or accessibility barriers that plague existing solutions.
----
-
 ##  The Problem
 
 Millions of people living with chronic conditions manage complicated daily health routines while balancing their lives. The tools available to them are fundamentally broken:
@@ -35,6 +30,8 @@ Millions of people living with chronic conditions manage complicated daily healt
 
 Furthermore, appointment management is often a **"logistical nightmare,"** requiring coordination between 3–5 different specialists who operate in complete silos.
 
+---
+
 ###  The Market Gap
 Current solutions force a binary choice: **Too Simple** (glorified alarms) or **Too Complex** (overwhelming, bloated dashboards). Neither solves the actual daily friction, as illustrated in our initial user journey storyboards:
 
@@ -45,7 +42,7 @@ Current solutions force a binary choice: **Too Simple** (glorified alarms) or **
 | <img src="https://github.com/user-attachments/assets/ce82c3f0-c9ae-4d6c-a69a-83f3f49b3ac7" width="100%" style="border-radius: 8px;" alt="Margaret Storyboard" /> | <img src="https://github.com/user-attachments/assets/501a0029-f6cf-4715-b180-329e10dd0543" width="100%" style="border-radius: 8px;" alt="Sarah Storyboard" /> |
 | *Margaret's friction is centered on confirmation and physical accessibility.* | *Sarah's friction is centered on logistical coordination and notification fatigue.* |
 
----
+
 ---
 
 ## The Solution: Adaptive Design
@@ -58,7 +55,7 @@ Rather than forcing a single interface on an imaginary "average user," the Healt
 | 🔵 **Standard** | Everyday users | Calendar sync, smart batch notifications, quick-tap logging |
 | ⚫ **Advanced** | Power users | Deep data visualization, CSV health exports, symptom trend analysis |
 
-#### ✨ Core Global Features
+####  Core Global Features
 * ✅ **Time-stamped confirmation:** Solves the "did I take it?" anxiety.
 * 📅 **Smart clustering:** Intelligent appointment scheduling.
 * 📷 **OCR Scanning:** Frictionless onboarding via pill bottle camera scanning.
@@ -259,7 +256,7 @@ Sarah's journey is driven by **efficiency** and discovering that the app can act
 | 2. Onboarding | Downloads during subway commute | Rushed → Impressed | Google sign-in + OCR = under 10 min setup |
 | 3. First Day | Busy workday with back-to-back meetings | Relieved → Hopeful | App delays reminder until meeting ends |
 | 4. Week 1 | Discovers data insights before neurologist visit | Surprised → Curious | "My fatigue is worse on days with more meetings" |
-| **5. Key Moment** ⭐ | Needs to schedule infusion + neurologist + lab | **Frustrated → Amazed** | App clusters 3 appointments, saves 2 hours travel |
+| **5. Key Moment**  | Needs to schedule infusion + neurologist + lab | **Frustrated → Amazed** | App clusters 3 appointments, saves 2 hours travel |
 | 6. Bad Day | Severe MS fatigue + brain fog | Anxious → Supported | One tap → simplified interface + husband notified |
 | 7. Long-term | Power user, 97% adherence, sends feature feedback | Satisfied → Engaged | "Less time managing health, more time with kids" |
 
@@ -275,7 +272,7 @@ Frustrated → Impressed → Satisfied → Surprised → Delighted → Grateful 
 
 ---
 
-## 🎬 Storyboards & Conceptualization
+##  Storyboards & Conceptualization
 
 To map out the emotional and practical journey of our personas, I developed storyboards to visualize the app in real-world contexts. 
 
@@ -313,13 +310,13 @@ Before drawing a single screen, I established a strict, mode-based design system
 
 ---
 
-### 📱 Core Screen Architecture
+###  Core Screen Architecture
 
 <img src="wireframes/1frame.png" width="220" align="left" style="margin-right: 20px; border-radius: 12px;" />
 
 #### 01 / Welcome & Mode Selection
 Three mode cards are presented at launch with clear, plain-language descriptions. A *"Need help? Invite a family member"* option supports caregiver-assisted setup for users like Margaret.
-> 🔬 **Research Insight:** 73% of participants worried about app complexity on first use.
+>  **Research Insight:** 73% of participants worried about app complexity on first use.
 
 <br clear="all" />
 <br>
@@ -328,7 +325,7 @@ Three mode cards are presented at launch with clear, plain-language descriptions
 
 #### 02 / Home Dashboard
 The home screen opens with a personalized greeting and puts "Today's Medications" at the very top—because that's the question users are asking the moment they open the app. Color-coded status indicators and timestamps eliminate all ambiguity.
-> 🔬 **Research Insight:** Built to solve the #1 *"Did I take it?"* question in under 5 seconds.
+>  **Research Insight:** Built to solve the #1 *"Did I take it?"* question in under 5 seconds.
 
 <br clear="all" />
 <br>
@@ -345,7 +342,7 @@ A Quick Actions 2×2 grid offers fast navigation to *My Health*, *Appointments*,
 
 #### 04 / Medication Directory
 Each medication card shows a photo for visual identification, special instructions *(e.g., "Take with food")*, and a color-coded status indicator. Filter chips help users seamlessly browse by *All / Daily / As-needed / Weekly*.
-> 🔬 **Research Insight:** 6/10 interview participants struggled to identify their medications by chemical name alone.
+>  **Research Insight:** 6/10 interview participants struggled to identify their medications by chemical name alone.
 
 <br clear="all" />
 <br>
@@ -362,7 +359,7 @@ A dual-input system defaults to camera scanning. The OCR reader auto-detects med
 
 #### 06 / Active Reminder State
 The reminder screen has one dominant action: a full-width green **"I TOOK IT"** button. The medication photo is enormous. Secondary options are visually de-emphasized to prevent accidental taps. Includes a 30-second "Undo" window.
-> 🔬 **Research Insight:** A single, massive CTA reduces cognitive load; immediate confirmation quells anxiety.
+>  **Research Insight:** A single, massive CTA reduces cognitive load; immediate confirmation quells anxiety.
 
 <br clear="all" />
 <br>
@@ -387,7 +384,7 @@ Appointment cards automatically generate preparation checklists *(bring insuranc
 
 #### 09 / Smart Scheduling Engine
 The scheduling assistant analyzes the user's connected calendar to suggest optimal days. When multiple appointments are needed, it proposes clustering them to save travel time, displaying concrete metrics: *"💰 Save 2 hrs travel / Save $15 parking."*
-> 🔬 **Research Insight:** Directly targets Sarah's #1 pain point: coordination across 4+ specialists.
+>  **Research Insight:** Directly targets Sarah's #1 pain point: coordination across 4+ specialists.
 
 <br clear="all" />
 <br>
@@ -400,7 +397,7 @@ Mode switching, text size with live preview, high contrast toggles, voice comman
 <br clear="all" />
 
 ---
-## 📱 High-Fidelity Prototype
+##  High-Fidelity Prototype
 
 The final interactive prototype was constructed in **Figma**, specifically optimized and scaled for the **iPhone 17 Pro** display.
 
